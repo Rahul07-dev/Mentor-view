@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-xs {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
+.btn,
+.btn-lg,
+.btn-sm,
+.btn-xs,
+.btn-chart {
+  @apply font-medium text-sm inline-flex items-center border rounded leading-5 shadow-sm transition duration-150 ease-in-out;
+}
+
+.btn {
+  @apply px-3 py-2;
+}
+
+.btn-lg {
+  @apply px-4 py-3;
+}
+
+.btn-sm {
+  @apply px-2 py-1;
+}
+.btn-chart {
+  @apply px-2 py-1 w-[100px] dark:bg-[#1a1a1a] dark:border-zinc-800 text-sm;
+}
+
+.btn-xs {
+  @apply px-2 py-0.5;
+}
+.form-checkbox {
+  @apply w-4 h-4 text-[#F05D40] bg-gray-100 border-gray-300 dark:bg-zinc-800 rounded focus:ring-[#F05D40];
+}
+
+.form-input {
+  @apply border-slate-200 focus:border-blue-600 dark:border-slate-700 rounded-lg text-slate-700 dark:text-slate-200 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-900 dark:hover:text-slate-300 dark:bg-[#1a1a1a];
+}
+
+.form-search {
+  @apply border-slate-200 focus:border-blue-600 dark:border-slate-700 rounded-lg text-slate-700 dark:text-slate-200 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-900 dark:hover:text-slate-300 dark:bg-[#1a1a1a];
+}
